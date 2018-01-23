@@ -9,4 +9,8 @@ describe('Calculating bowling score', () => {
     expect(calculateBowlingScore([3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 7, 10]))
       .toBe(101);
   });
+  test('My bowling score for no rolls is 0', () => {
+    expect(calculateBowlingScore([]))
+      .toBe(0);
+  });
 });
