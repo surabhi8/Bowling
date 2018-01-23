@@ -18,4 +18,9 @@ describe('Calculating bowling score', () => {
       10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10,
       10])).toBe(210);
   });
+  test('My bowling score for rolls [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10] is a number', () => {
+    expect(typeof (calculateBowlingScore([10, 10, 10,
+      10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10,
+      10]))).toBe('number');
+  });
 });
