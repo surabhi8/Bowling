@@ -15,8 +15,11 @@ function strikePoints(rolls, currentFrame) {
 function sparePoints(rolls, currentFrame) {
   return rolls[currentFrame + 2];
 }
-
+function verifyInput(rolls) {
+  return Array.isArray(rolls);
+}
 function score(rolls) {
+  if (verifyInput(rolls) === false) return null;
   if (rolls.length === 0) {
     return 0;
   }
