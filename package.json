@@ -1,0 +1,19 @@
+{
+  "name": "scoringbowling",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "dependencies": {
+    "jest": "^22.1.4"
+  },
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "scripts": {
+    "test": "jest scoring-bowling-test.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
