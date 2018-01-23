@@ -20,6 +20,9 @@ function score(rolls) {
   if (rolls.length === 0) {
     return 0;
   }
+  if (rolls.length < 20) {
+    return null;
+  }
   let totalScore = 0;
   let currentFrame = 0;
   for (let i = 0; i < 10; i += 1) {

@@ -23,4 +23,12 @@ describe('Calculating bowling score', () => {
       10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10,
       10]))).toBe('number');
   });
+  test('My bowling score for less than 10 frames gives null as the score', () => {
+    expect(calculateBowlingScore([10, 10, 10])).toBe(null);
+  });
+  test('My bowling score considers only first 10 frames ', () => {
+    expect(calculateBowlingScore([3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6,
+      3, 6, 3, 7, 10, 11]))
+      .toBe(101);
+  });
 });
