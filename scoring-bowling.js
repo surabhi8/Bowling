@@ -41,6 +41,4 @@ function score(rolls) {
   return totalScore;
 }
 
-
-const array1 = [3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 7, 2];
 module.exports = score;

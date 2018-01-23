@@ -13,4 +13,9 @@ describe('Calculating bowling score', () => {
     expect(calculateBowlingScore([]))
       .toBe(0);
   });
+  test('My bowling score for rolls [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10] is 210', () => {
+    expect(calculateBowlingScore([10, 10, 10,
+      10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10,
+      10])).toBe(210);
+  });
 });
