@@ -31,4 +31,10 @@ describe('Calculating bowling score', () => {
       3, 6, 3, 7, 10, 11]))
       .toBe(101);
   });
+  // I didn't write code for last test case
+  // test('My bowling score returns null if any negative roll is there ', () => {
+  //   expect(calculateBowlingScore([3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6,
+  //     3, 6, 3, -7, 10]))
+  //     .toBe(null);
+  // });
 });
